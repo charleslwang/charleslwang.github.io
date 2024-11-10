@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Charles Wang - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar">
         <a href="index.html">About</a>
         <a href="portfolio.html">Portfolio</a>
@@ -15,25 +15,63 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Main Bio Section -->
     <div class="container">
-        <div class="sidebar">
-            <img src="images/profile.jpg" alt="Profile" class="profile-photo">
-            <h2>Your Name</h2>
-            <p>Student at Columbia University</p>
-            <p>Email: your.email@example.com</p>
-            <p>Location: New York, NY</p>
+        <div class="hero-section">
+            <div class="profile-section">
+                <img src="docs/images/Charles Wang.jpg" alt="Charles Wang" class="profile-photo">
+                <div class="social-links">
+                    <a href="[Your LinkedIn]" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="[Your GitHub]" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="intro-text">
+                <h1>Charles Wang</h1>
+                <h2>Computer Science & Mathematics Student</h2>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+            </div>
         </div>
-        <div class="main-content">
+
+        <div class="about-section">
             <h2>About Me</h2>
-            <p>A brief bio about yourself...</p>
-            <h3>Skills</h3>
-            <ul>
-                <li>Programming Languages: Java, Python, C/C++...</li>
-                <li>Libraries: Pandas, Numpy...</li>
-                <li>Web Technologies: HTML, CSS</li>
-            </ul>
+            <p class="bio">
+                [Your compelling bio here - Template: A passionate Computer Science and Mathematics student at Columbia University,
+                combining theoretical knowledge with practical applications in AI/ML and quantitative analysis.
+                With experience at leading firms like Barclays and innovative projects in AI music composition,
+                I'm dedicated to pushing the boundaries of technology and finance.]
+            </p>
+        </div>
+
+        <div class="skills-section">
+            <h2>Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>C++</span>
+                        <span>R</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI/ML</h3>
+                    <div class="skill-tags">
+                        <span>TensorFlow</span>
+                        <span>PyTorch</span>
+                        <span>sklearn</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Tech</h3>
+                    <div class="skill-tags">
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
