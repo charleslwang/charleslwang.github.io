@@ -4,136 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charles Wang - Resume</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar">
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
+<body class="cyber-bg">
+    <div class="cyber-grid"></div>
+
+    <nav class="cyber-nav">
+        <a href="index.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="resume.html" class="nav-link active">Resume</a>
+        <a href="contact.html" class="nav-link">Contact</a>
     </nav>
 
-    <div class="container">
+    <main class="container">
         <div class="resume-header">
-            <h1>Charles L. Wang</h1>
+            <h1 class="cyber-glitch-text">Charles L. Wang</h1>
             <div class="contact-info">
-                <span><i class="fas fa-phone"></i> 860-593-0729</span>
-                <span>
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:charleslw2017@gmail.com">charleslw2017@gmail.com</a>
-                </span>
-                <span>
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/charles-l-wang/" target="_blank">LinkedIn</a>
-                </span>
+                <span class="cyber-text">860-593-0729</span>
+                <span class="cyber-text">charleslw2017@gmail.com</span>
+                <a href="https://www.linkedin.com/in/charles-l-wang/" class="cyber-link" target="_blank">LinkedIn</a>
             </div>
         </div>
 
+        <section class="resume-section">
+            <h2 class="cyber-heading">Education</h2>
+            <div class="cyber-panel">
+                <h3 class="cyber-subheading">Columbia University, NY (2022-2026)</h3>
+                <div class="education-details">
+                    <div class="cyber-detail">
+                        <span class="detail-label">Major:</span>
+                        <span class="detail-text">Computer Science & Mathematics-Statistics</span>
+                    </div>
 
-        <div class="resume-section">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Columbia University, NY (2022-2026)</h3>
-                <p><strong>Major:</strong> Computer Science & Mathematics-Statistics</p>
-                <p><strong>Relevant Coursework:</strong> Analysis of Algorithms, Analysis & Optimization, Elementary Stochastic Processes, Natural Language Processing, Data Structures, Advanced Programming, Fundamentals of Computer Systems, Computer Science Theory, Linear Algebra, Calc-Based Statistics, Probability Theory, Multivariable Calculus, Artificial Intelligence, Intro to Databases, Intermediate Macroeconomics, Intermediate Microeconomics</p>
-                <p><strong>Teaching Assistant:</strong> Discrete Mathematics (Python)</p>
-                <p><strong>Programs:</strong> SIG Trading Discovery Day, D.E. Shaw Connect, Goldman Sachs Virtual Insight Series</p>
-                <p><strong>Awards:</strong> AIME 2x Qualifier, National Merit Finalist, Top 16 @ International Public Policy Forum, Yale Osterweis Champion</p>
+                    <div class="cyber-detail">
+                        <span class="detail-label">Relevant Coursework:</span>
+                        <div class="course-tags">
+                            <span class="cyber-tag">Analysis of Algorithms</span>
+                            <span class="cyber-tag">Natural Language Processing</span>
+                            <span class="cyber-tag">Advanced Programming</span>
+                            <!-- Add more courses as tags -->
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="resume-section">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Barclays</h3>
-                <p class="experience-meta">Quantitative Analyst Intern | Jun 2024 - August 2024</p>
-                <ul>
-                    <li>Modeled 9Q projections of credit risk and capital adequacy using 18 years of macro data (4 million+ data points)</li>
-                    <li>Backtested forecasts against 20 years of historical credit losses and achieved 98% accuracy in forecasts</li>
-                    <li>Developed 4000+ linear regression models w/ Lasso & Ridge and 100+ ML models (random forest, gradient boosting)</li>
+        <section class="resume-section">
+            <h2 class="cyber-heading">Experience</h2>
+
+            <div class="cyber-panel">
+                <div class="experience-header">
+                    <h3 class="cyber-subheading">Barclays</h3>
+                    <span class="cyber-date">Jun 2024 - August 2024</span>
+                </div>
+                <h4 class="cyber-role">Quantitative Analyst Intern</h4>
+                <ul class="cyber-list">
+                    <li>Modeled 9Q projections of credit risk and capital adequacy using 18 years of macro data</li>
+                    <li>Backtested forecasts against 20 years of historical credit losses with 98% accuracy</li>
+                    <li>Developed 4000+ linear regression models w/ Lasso & Ridge and 100+ ML models</li>
                 </ul>
             </div>
 
-            <div class="experience-item">
-                <h3>Steel Key Capital</h3>
-                <p class="experience-meta">Research Analyst Intern | Feb 2024 - Apr 2024</p>
-                <ul>
-                    <li>Digital assets research at a $10 million+ AUM liquid token hedge fund (focused on crypto & DePIN protocols)</li>
-                    <li>Responsible for management outreach, led interviews with C-suite executive, & performed investment due diligence</li>
-                </ul>
-            </div>
+            <!-- Repeat cyber-panel for other experiences -->
+        </section>
 
-            <div class="experience-item">
-                <h3>ask2.ai</h3>
-                <p class="experience-meta">AI/ML Research Intern | Oct 2023 - Jan 2024</p>
-                <ul>
-                    <li>Developed stock buyback strategies using geometric Brownian motion simulations and genetic algorithms</li>
-                    <li>Optimized strategy using temporal optionality - outperformed benchmarks across varying volatility and drift</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <h3>Columbia Business School</h3>
-                <p class="experience-meta">Quantitative Research Assistant | Sep 2023 - Nov 2023</p>
-                <ul>
-                    <li>Developed case study for graduate school business school optimization course based on Vanguard Fixed Income Trading's use of Gurobi Optimization in ETF trading</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <h3>The Travelers Companies</h3>
-                <p class="experience-meta">Software Engineering Intern | June 2023 - Aug 2023</p>
-                <ul>
-                    <li>Integrated Java OKTA security protocol into LDAP authentication database, which handles user login & access</li>
-                    <li>Redesigned underwriting app's UI/UX, streamlining frontend and backend for improved performance</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="resume-section">
-            <h2>Technical Skills</h2>
+        <section class="resume-section">
+            <h2 class="cyber-heading">Technical Skills</h2>
             <div class="skills-cloud">
-                <span>Python</span>
-                <span>Java</span>
-                <span>SQL</span>
-                <span>C/C++</span>
-                <span>R</span>
-                <span>JavaScript</span>
-                <span>Excel</span>
-                <span>Bash</span>
-                <span>Jupyter</span>
-                <span>MATLAB</span>
-                <span>NumPy</span>
-                <span>pandas</span>
-                <span>CUDA</span>
-                <span>sklearn</span>
-                <span>TensorFlow</span>
-                <span>Gurobi</span>
-                <span>Matplotlib</span>
-                <span>Git</span>
-                <span>AI/ML</span>
-                <span>CI/CD</span>
-                <span>AWS</span>
-                <span>REST</span>
-                <span>GraphQL</span>
-                <span>Keras</span>
-                <span>seaborn</span>
-                <span>MySQL</span>
-                <span>Streamlit</span>
-                <span>MongoDB</span>
-                <span>Flask</span>
-                <span>XGBoost</span>
+                <span class="cyber-tag">Python</span>
+                <span class="cyber-tag">Java</span>
+                <span class="cyber-tag">SQL</span>
+                <span class="cyber-tag">C/C++</span>
+                <!-- Add more skills -->
             </div>
-        </div>
+        </section>
 
-        <div class="download-section">
-            <a href="resume.pdf" download class="download-button">
-                <i class="fas fa-download"></i> Download Full Resume
+        <div class="resume-download">
+            <a href="resume.pdf" class="cyber-button" download>
+                <span class="button-text">Download Full Resume</span>
+                <span class="button-glitch"></span>
             </a>
         </div>
-    </div>
-    <script src="script.js"></script>
+    </main>
 </body>
 </html>

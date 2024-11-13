@@ -3,52 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Charles Wang - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
+<body class="cyber-bg">
+    <div class="cyber-grid"></div>
+
+    <nav class="cyber-nav">
+        <a href="index.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="contact.html" class="nav-link">Contact</a>
     </nav>
 
-    <!-- Portfolio Section -->
-    <div class="container">
-        <h2>Portfolio</h2>
+    <main class="container">
+        <h1 class="cyber-glitch-text">Portfolio</h1>
+
         <div class="project-grid">
-
-            <div class="project">
-                <img src="path/to/image1.jpg" alt="AI-Generated Music Producer" class="project-image">
-                <h3>AI-Generated Music Producer</h3>
-                <p>Takes inputs and creates a song with those specifications.</p>
-                <a href="https://github.com/charleslwang/AIGeneratedMusic">View More</a>
+            <div class="cyber-card">
+                <div class="card-header">
+                    <img src="/api/placeholder/400/200" alt="AI Music Producer" class="project-image">
+                    <div class="cyber-overlay">
+                        <span class="cyber-badge">AI/ML</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="cyber-card-title">AI-Generated Music Producer</h3>
+                    <p class="cyber-card-text">Takes inputs and creates a song with those specifications.</p>
+                    <a href="https://github.com/charleslwang/AIGeneratedMusic" class="cyber-button" target="_blank">
+                        <span class="button-text">View Project</span>
+                        <span class="button-glitch"></span>
+                    </a>
+                </div>
             </div>
 
-            <div class="project">
-                <img src="path/to/image1.jpg" alt="Payment Transactions Fraud Detection" class="project-image">
-                <h3>Payment Transactions Fraud Detection</h3>
-                <p>Takes a csv of transactions and detects payment fraud.</p>
-                <a href="https://github.com/charleslwang/PFDM">View More</a>
+            <div class="cyber-card">
+                <div class="card-header">
+                    <img src="/api/placeholder/400/200" alt="Fraud Detection" class="project-image">
+                    <div class="cyber-overlay">
+                        <span class="cyber-badge">Security</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="cyber-card-title">Payment Transactions Fraud Detection</h3>
+                    <p class="cyber-card-text">Takes a csv of transactions and detects payment fraud.</p>
+                    <a href="https://github.com/charleslwang/PFDM" class="cyber-button" target="_blank">
+                        <span class="button-text">View Project</span>
+                        <span class="button-glitch"></span>
+                    </a>
+                </div>
             </div>
 
-            <div class="project">
-                <img src="path/to/image1.jpg" alt="Asteroid Trajectory Forecast Model" class="project-image">
-                <h3>Asteroid Trajectory Forecast Model</h3>
-                <p>Forecasts the trajectory of an asteroid and measures collision risk with Earth & satellites.</p>
-                <a href="https://github.com/charleslwang/AsteroidTrajectories">View More</a>
+            <div class="cyber-card">
+                <div class="card-header">
+                    <img src="/api/placeholder/400/200" alt="Asteroid Tracker" class="project-image">
+                    <div class="cyber-overlay">
+                        <span class="cyber-badge">Space</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="cyber-card-title">Asteroid Trajectory Forecast Model</h3>
+                    <p class="cyber-card-text">Forecasts the trajectory of an asteroid and measures collision risk.</p>
+                    <a href="https://github.com/charleslwang/AsteroidTrajectories" class="cyber-button" target="_blank">
+                        <span class="button-text">View Project</span>
+                        <span class="button-glitch"></span>
+                    </a>
+                </div>
             </div>
 
-            <div class="project">
-                <img src="path/to/image1.jpg" alt="Stock Dashboard w/ ML Forecast & AI Sentiment Analysis" class="project-image">
-                <h3>Stock Dashboard w/ ML Forecast & AI Sentiment Analysis</h3>
-                <p>Dashboard provides insights into stock price predictions and recent company performance.</p>
-                <a href="https://github.com/charleslwang/RTMD">View More</a>
+            <div class="cyber-card">
+                <div class="card-header">
+                    <img src="/api/placeholder/400/200" alt="Stock Dashboard" class="project-image">
+                    <div class="cyber-overlay">
+                        <span class="cyber-badge">Finance</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="cyber-card-title">Stock Dashboard w/ ML Forecast</h3>
+                    <p class="cyber-card-text">Dashboard provides insights into stock price predictions.</p>
+                    <a href="https://github.com/charleslwang/RTMD" class="cyber-button" target="_blank">
+                        <span class="button-text">View Project</span>
+                        <span class="button-glitch"></span>
+                    </a>
+                </div>
             </div>
-            <!-- Repeat project div for each project -->
         </div>
-    </div>
+    </main>
 </body>
 </html>
