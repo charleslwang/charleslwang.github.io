@@ -353,38 +353,30 @@ input:focus, textarea:focus {
     border: 1px solid rgba(0, 255, 255, 0.4);
     box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
 }
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
 
-/* Skills Box */
-.skills-box {
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.cyber-box.skill-tags {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-}
-
-.skills-box .cyber-tag {
-    background-color: rgba(0, 255, 255, 0.1);
-    padding: 8px 12px;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    color: #0ff;
-    border: 1px solid rgba(0, 255, 255, 0.4);
-    box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
-}
-
-/* General Box Styles for Skills and Coursework */
-.cyber-box {
+    padding: 10px;
     border: 2px solid #0ff;
-    padding: 20px;
-    margin: 15px auto;
     background: linear-gradient(145deg, #111, #333);
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 5px rgba(0, 255, 255, 0.3) inset;
     border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 5px rgba(0, 255, 255, 0.2);
 }
 
-/* Skill Tags Styling */
-.skill-tags .cyber-tag {
+.cyber-tag {
     background-color: rgba(0, 255, 255, 0.1);
     padding: 8px 12px;
     border-radius: 4px;
@@ -393,8 +385,8 @@ input:focus, textarea:focus {
     color: #0ff;
     border: 1px solid rgba(0, 255, 255, 0.4);
     box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
-    margin: 5px;
 }
+
 /* Cyber Button Style */
 .cyber-button {
     position: relative;
@@ -412,7 +404,6 @@ input:focus, textarea:focus {
     transition: all 0.2s ease-in-out;
 }
 
-/* Neon Glow and Hover Effect */
 .cyber-button:hover {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.5) inset;
     background: #0ff;
@@ -442,71 +433,23 @@ input:focus, textarea:focus {
     animation: glitchBottom 2s infinite;
 }
 
-/* Glitch Animations */
 @keyframes glitchTop {
-    0% {
-        transform: translate(0, 0);
-        opacity: 0.2;
-    }
-    20% {
-        transform: translate(-3px, -3px);
-        opacity: 0.1;
-    }
-    40% {
-        transform: translate(3px, -3px);
-        opacity: 0.3;
-    }
-    60% {
-        transform: translate(-2px, -2px);
-        opacity: 0.1;
-    }
-    80% {
-        transform: translate(3px, 3px);
-        opacity: 0.2;
-    }
-    100% {
-        transform: translate(0, 0);
-        opacity: 0.1;
-    }
+    0%, 100% { transform: translate(0, 0); opacity: 0.2; }
+    20% { transform: translate(-3px, -3px); opacity: 0.1; }
+    40% { transform: translate(3px, -3px); opacity: 0.3; }
+    80% { transform: translate(3px, 3px); opacity: 0.2; }
 }
 
 @keyframes glitchBottom {
-    0% {
-        transform: translate(0, 0);
-        opacity: 0.2;
-    }
-    20% {
-        transform: translate(3px, 3px);
-        opacity: 0.1;
-    }
-    40% {
-        transform: translate(-3px, 3px);
-        opacity: 0.3;
-    }
-    60% {
-        transform: translate(2px, 2px);
-        opacity: 0.1;
-    }
-    80% {
-        transform: translate(-3px, -3px);
-        opacity: 0.2;
-    }
-    100% {
-        transform: translate(0, 0);
-        opacity: 0.1;
-    }
+    0%, 100% { transform: translate(0, 0); opacity: 0.2; }
+    20% { transform: translate(3px, 3px); opacity: 0.1; }
+    40% { transform: translate(-3px, 3px); opacity: 0.3; }
+    80% { transform: translate(-3px, -3px); opacity: 0.2; }
 }
 
-/* Text Glitch Effect */
 .cyber-button .button-text {
     position: relative;
 }
-
-.cyber-button:hover .button-text {
-    color: #111;
-    text-shadow: 0px 0px 5px rgba(0, 255, 255, 0.5);
-}
-
 
 /* Project Grid Styling */
 .project-grid {
@@ -516,7 +459,6 @@ input:focus, textarea:focus {
     margin-top: 20px;
 }
 
-/* Project Card Styling */
 .cyber-card {
     position: relative;
     overflow: hidden;
@@ -530,14 +472,12 @@ input:focus, textarea:focus {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
 }
 
-/* Project Image */
 .project-image {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* Cyber Overlay Styling */
 .cyber-overlay {
     position: absolute;
     top: 0;
@@ -560,7 +500,6 @@ input:focus, textarea:focus {
     opacity: 1;
 }
 
-/* Title and Badge Styling */
 .project-title {
     font-size: 1.2rem;
     font-weight: bold;
@@ -575,9 +514,9 @@ input:focus, textarea:focus {
     margin-bottom: 10px;
 }
 
-/* Description Styling */
 .project-description {
     font-size: 0.9rem;
     margin-top: 8px;
     color: #ccc;
 }
+
