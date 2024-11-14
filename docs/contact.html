@@ -8,32 +8,31 @@
 </head>
 <body>
     <div class="cyber-grid">
-        <nav class="nav-center">
+        <nav class="nav-center flex justify-center">
             <a href="index.html" class="nav-link">About</a>
             <a href="portfolio.html" class="nav-link">Portfolio</a>
             <a href="resume.html" class="nav-link">Resume</a>
             <a href="contact.html" class="nav-link active">Contact</a>
         </nav>
 
-        <div class="container text-center" role="main">
-            <h1 class="cyber-glitch-text">Get in Touch</h1>
+        <div class="container mx-auto max-w-2xl text-center" role="main">
+            <h1 class="cyber-glitch-text mb-8">Get in Touch</h1>
 
             <div class="contact-wrapper">
-                <div class="contact-info">
-                    <p>I'm always open to new opportunities and collaborations.</p>
+                <p class="cyber-text mb-8">I'm always open to new opportunities and collaborations.</p>
 
-                    <div class="contact-methods">
-                        <div class="cyber-panel">
-                            <div class="contact-method">
-                                <div class="method-icon email-icon"></div>
-                                <h3 class="cyber-subheading">Email</h3>
-                                <a href="mailto:charleslw2017@gmail.com" class="cyber-link">charleslw2017@gmail.com</a>
-                            </div>
+                <div class="contact-methods mb-8">
+                    <div class="cyber-panel mb-8">
+                        <div class="contact-method">
+                            <div class="method-icon email-icon"></div>
+                            <h3 class="cyber-subheading">Email</h3>
+                            <a href="mailto:charleslw2017@gmail.com" class="cyber-link">charleslw2017@gmail.com</a>
                         </div>
+                    </div>
 
-                        <div class="cyber-panel contact-form">
-                            <h3 class="cyber-subheading">Send Message</h3>
-                            <form class="cyber-form">
+                    <div class="cyber-panel">
+                        <form class="cyber-form max-w-xl mx-auto">
+                            <div class="grid grid-cols-2 gap-4 mb-4">
                                 <div class="form-group">
                                     <label for="name" class="cyber-label">Name</label>
                                     <input type="text" id="name" class="cyber-input" required>
@@ -43,23 +42,23 @@
                                     <label for="email" class="cyber-label">Email</label>
                                     <input type="email" id="email" class="cyber-input" required>
                                 </div>
+                            </div>
 
-                                <div class="form-group">
-                                    <label for="title" class="cyber-label">Title</label>
-                                    <input type="text" id="title" class="cyber-input" required>
-                                </div>
+                            <div class="form-group mb-4">
+                                <label for="title" class="cyber-label">Subject</label>
+                                <input type="text" id="title" class="cyber-input" required>
+                            </div>
 
-                                <div class="form-group">
-                                    <label for="message" class="cyber-label">Message</label>
-                                    <textarea id="message" class="cyber-textarea" rows="5" required></textarea>
-                                </div>
+                            <div class="form-group mb-6">
+                                <label for="message" class="cyber-label">Message</label>
+                                <textarea id="message" class="cyber-textarea" rows="5" required></textarea>
+                            </div>
 
-                                <button type="submit" class="cyber-button">
-                                    <span class="button-text">Send Message</span>
-                                    <span class="button-glitch"></span>
-                                </button>
-                            </form>
-                        </div>
+                            <button type="submit" class="cyber-button mx-auto">
+                                <span class="button-text">Send Message</span>
+                                <span class="button-glitch"></span>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
