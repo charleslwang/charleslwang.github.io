@@ -323,3 +323,52 @@ input:focus, textarea:focus {
 .flex-wrap { flex-wrap: wrap; }
 .gap-2 { gap: 0.5rem; }
 .gap-4 { gap: 1rem; }
+
+/* General Box Styles */
+.cyber-box {
+    border: 2px solid #0ff; /* Neon blue border */
+    padding: 20px;
+    margin: 15px auto;
+    width: fit-content;
+    background: linear-gradient(145deg, #111, #333);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 5px rgba(0, 255, 255, 0.3) inset;
+    border-radius: 8px;
+}
+
+/* Course Tags Box */
+.course-box .course-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.course-box .cyber-tag {
+    background-color: rgba(0, 255, 255, 0.1);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #0ff;
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+}
+
+/* Skills Box */
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills-box .cyber-tag {
+    background-color: rgba(0, 255, 255, 0.1);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #0ff;
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+}
