@@ -372,3 +372,26 @@ input:focus, textarea:focus {
     border: 1px solid rgba(0, 255, 255, 0.4);
     box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
 }
+
+/* General Box Styles for Skills and Coursework */
+.cyber-box {
+    border: 2px solid #0ff;
+    padding: 20px;
+    margin: 15px auto;
+    background: linear-gradient(145deg, #111, #333);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 5px rgba(0, 255, 255, 0.3) inset;
+    border-radius: 8px;
+}
+
+/* Skill Tags Styling */
+.skill-tags .cyber-tag {
+    background-color: rgba(0, 255, 255, 0.1);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #0ff;
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+    margin: 5px;
+}
