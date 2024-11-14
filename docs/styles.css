@@ -546,3 +546,36 @@ input:focus, textarea:focus {
     margin: 5px;
 }
 
+.experiences-section {
+    margin-top: 40px;
+}
+
+.experience-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.experience-logo {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.experience-logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.experience-logo:hover {
+    transform: scale(1.1);
+}
+
