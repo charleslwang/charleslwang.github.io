@@ -579,3 +579,34 @@ input:focus, textarea:focus {
     transform: scale(1.1);
 }
 
+.cyber-box {
+    padding: 20px;
+    border: 2px solid #0ff;
+    background: linear-gradient(145deg, #111, #333);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 5px rgba(0, 255, 255, 0.2);
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cyber-subheading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0ff;
+    margin-bottom: 15px;
+}
+
+/* Styling for individual tags */
+.course-tags .cyber-tag {
+    background-color: rgba(0, 255, 255, 0.1);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #0ff;
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+    margin: 5px;
+}
+
+
