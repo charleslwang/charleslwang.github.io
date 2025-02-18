@@ -13,6 +13,7 @@
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
 }
 
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -36,12 +37,12 @@ body {
 .split-layout {
     display: flex;
     flex: 1;
-    height: calc(100vh - 80px); /* Adjusted for smaller company strip */
+    height: calc(100vh - 80px);
 }
 
 /* Bio Section (Left) */
 .bio-section {
-    width: 380px; /* Slightly narrower */
+    width: 380px;
     background: var(--bg-secondary);
     padding: 2.5rem 2rem;
     position: fixed;
@@ -56,12 +57,13 @@ body {
     gap: 2rem;
 }
 
+/* Profile Section */
 .profile-section {
     text-align: center;
 }
 
 .profile-image {
-    width: 150px; /* Smaller profile image */
+    width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 1.5rem;
@@ -91,11 +93,8 @@ h1 {
     font-size: 0.9rem;
     margin-bottom: 1rem;
 }
-<style>
-.experience-section {
-    padding: 1rem 0;
-}
 
+/* Experience Section */
 .section-title {
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -208,13 +207,6 @@ h1 {
     white-space: nowrap;
 }
 
-.experience-content p {
-    color: var(--text-secondary);
-    font-size: 0.875rem;
-    line-height: 1.6;
-    margin-bottom: 0.75rem;
-}
-
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
@@ -236,7 +228,49 @@ h1 {
     background: var(--accent);
     color: white;
 }
-</style>
+
+/* Education Section */
+.education-content {
+    background: var(--bg-primary);
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+}
+
+.education-content h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.degree {
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.year {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.course-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.course-highlights span {
+    background: var(--bg-secondary);
+    color: var(--accent);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
 /* Portfolio Section */
 .portfolio-section {
     flex: 1;
@@ -247,10 +281,184 @@ h1 {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Smaller cards */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1.5rem;
 }
 
 .project-card {
     position: relative;
-    border-radius: 0
+    border-radius: 1rem;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    text-decoration: none;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(
+        to top,
+        rgba(15, 23, 42, 0.95),
+        rgba(15, 23, 42, 0.8) 50%,
+        transparent
+    );
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    transform: translateY(0);
+}
+
+.project-overlay h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-overlay p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.project-tags span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+}
+
+/* Company Strip */
+.company-strip {
+    height: 80px;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+}
+
+.logo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 0 2rem;
+}
+
+.company-logo {
+    height: 40px;
+    object-fit: contain;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.company-logo:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+/* Scrollbar Styling */
+.bio-section::-webkit-scrollbar,
+.portfolio-section::-webkit-scrollbar {
+    width: 8px;
+}
+
+.bio-section::-webkit-scrollbar-track,
+.portfolio-section::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+
+.bio-section::-webkit-scrollbar-thumb,
+.portfolio-section::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 4px;
+}
+
+.bio-section::-webkit-scrollbar-thumb:hover,
+.portfolio-section::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .split-layout {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .bio-section {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding: 2rem 1.5rem;
+    }
+
+    .portfolio-section {
+        margin-left: 0;
+        padding: 2rem 1.5rem;
+    }
+
+    .logo-container {
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .company-logo {
+        height: 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .experience-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        aspect-ratio: 3/2;
+    }
+
+    .project-overlay {
+        transform: translateY(0);
+        background: linear-gradient(
+            to top,
+            rgba(15, 23, 42, 0.95),
+            rgba(15, 23, 42, 0.8)
+        );
+    }
+}
