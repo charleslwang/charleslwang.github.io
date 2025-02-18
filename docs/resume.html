@@ -8,155 +8,165 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="nav-link">About</a>
-            <a href="portfolio.html" class="nav-link">Portfolio</a>
-            <a href="resume.html" class="nav-link active">Resume</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-        </div>
-    </nav>
-
-    <main class="container resume-container">
-        <section class="resume-header">
-            <h1>Charles L. Wang</h1>
-            <div class="contact-info">
-                <span>860-593-0729</span>
-                <span>charleslw2017@gmail.com</span>
-                <a href="https://www.linkedin.com/in/charles-l-wang/" target="_blank">LinkedIn</a>
-            </div>
-        </section>
-
-        <section class="resume-section">
-            <h2>Experience</h2>
-            
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div class="title-group">
-                        <h3>Lumara</h3>
-                        <span class="role">Founder/Lead Engineer</span>
-                    </div>
-                    <span class="date">Jan 2025 - Present</span>
-                </div>
-                <ul>
-                    <li>Building Lumara (lumaraai.xyz), an AI-powered platform democratizing access to verified mentorship across all domains of learning.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div class="title-group">
-                        <h3>Columbia Engineering</h3>
-                        <span class="role">Machine Learning Undergraduate Researcher</span>
-                    </div>
-                    <span class="date">Dec 2024 - Present</span>
-                </div>
-                <ul>
-                    <li>Working with Prof. Micah Goldblum to develop a novel latent reasoning benchmark, conducting extensive literature review on Chain of Continuous Thought (CoConuT) reasoning in abstract latent spaces using recurrent depth.</li>
-                    <li>Developing test-time scaling techniques to enhance LLM reasoning without retraining by dynamically adjusting inference depth to improve math and logical reasoning accuracy on fine-tuned data samples.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div class="title-group">
-                        <h3>Barclays</h3>
-                        <span class="role">Quantitative Analyst Intern</span>
-                    </div>
-                    <span class="date">Jun 2024 - Aug 2024</span>
-                </div>
-                <ul>
-                    <li>Developed and rigorously tested hypotheses about credit risk drivers using 4M+ data points, independently researching and implementing time series models.</li>
-                    <li>Collaborated cross-functionally with risk managers and quantitative analysts to refine models and successfully deployed to production after conducting statistical validation against 20 years of historical data.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div class="title-group">
-                        <h3>The Travelers Companies</h3>
-                        <span class="role">Software Engineer Intern</span>
-                    </div>
-                    <span class="date">Jun 2023 - Aug 2023</span>
-                </div>
-                <ul>
-                    <li>Designed Java OKTA security protocol for LDAP authentication, enabling secure user login and access management.</li>
-                    <li>Deployed enhancements via CI/CD pipelines using Jenkins, Docker, & Terraform for production rollouts.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="resume-section">
-            <h2>Education</h2>
-            <div class="education-item">
-                <div class="education-header">
-                    <h3>Columbia University</h3>
-                    <span class="date">2022 - 2026</span>
-                </div>
-                <p class="degree">Double BA in Computer Science & Mathematics-Statistics</p>
-                <div class="coursework">
-                    <h4>Key Coursework</h4>
-                    <div class="course-tags">
-                        <span class="tag">AI</span>
-                        <span class="tag">ML</span>
-                        <span class="tag">NLP</span>
-                        <span class="tag">Linear Regression Models</span>
-                        <span class="tag">Statistical Inference</span>
-                        <span class="tag">Discrete Math (TA)</span>
-                        <span class="tag">Linear Algebra</span>
-                        <span class="tag">Probability Theory</span>
-                        <span class="tag">Analysis of Algorithms</span>
-                        <span class="tag">Data Structures</span>
-                        <span class="tag">Stochastic Processes</span>
-                        <span class="tag">Analysis & Optimization</span>
-                    </div>
+    <div class="page-wrapper">
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">About</a>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    <a href="resume.html" class="nav-link active">Resume</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
                 </div>
             </div>
-        </section>
+        </nav>
 
-        <section class="resume-section">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Programming Languages</h4>
-                    <div class="skill-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Java</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">C</span>
-                        <span class="tag">Bash</span>
+        <main>
+            <section class="resume-hero">
+                <div class="section-content">
+                    <div class="resume-header">
+                        <h1>Charles L. Wang</h1>
+                        <div class="header-details">
+                            <span>860-593-0729</span>
+                            <span>charleslw2017@gmail.com</span>
+                            <a href="https://www.linkedin.com/in/charles-l-wang/" target="_blank">LinkedIn</a>
+                        </div>
+                        <a href="resume.pdf" class="download-resume" download>
+                            Download Resume →
+                        </a>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h4>Data Science/ML</h4>
-                    <div class="skill-tags">
-                        <span class="tag">Numpy</span>
-                        <span class="tag">pandas</span>
-                        <span class="tag">sklearn</span>
-                        <span class="tag">Tensorflow</span>
-                        <span class="tag">Keras</span>
-                        <span class="tag">Hugging Face</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4>Big Data/Cloud</h4>
-                    <div class="skill-tags">
-                        <span class="tag">Spark</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">AWS</span>
-                        <span class="tag">Azure</span>
-                        <span class="tag">Git</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <div class="resume-download">
-            <a href="resume.pdf" class="download-button" download>
-                Download Full Resume
-            </a>
-        </div>
-    </main>
+            <section class="resume-content">
+                <div class="section-content">
+                    <div class="resume-grid">
+                        <div class="main-content">
+                            <div class="section-block">
+                                <h2>Experience</h2>
+                                <div class="experience-timeline">
+                                    <div class="timeline-item">
+                                        <div class="item-header">
+                                            <div class="title-block">
+                                                <h3>Lumara</h3>
+                                                <span class="role">Founder/Lead Engineer</span>
+                                            </div>
+                                            <span class="date">Jan 2025 - Present</span>
+                                        </div>
+                                        <p>Building Lumara (lumaraai.xyz), an AI-powered platform democratizing access to verified mentorship across all domains of learning.</p>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="item-header">
+                                            <div class="title-block">
+                                                <h3>Columbia Engineering</h3>
+                                                <span class="role">Machine Learning Undergraduate Researcher</span>
+                                            </div>
+                                            <span class="date">Dec 2024 - Present</span>
+                                        </div>
+                                        <ul>
+                                            <li>Working with Prof. Micah Goldblum to develop a novel latent reasoning benchmark, conducting extensive literature review on Chain of Continuous Thought reasoning.</li>
+                                            <li>Developing test-time scaling techniques to enhance LLM reasoning without retraining.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="item-header">
+                                            <div class="title-block">
+                                                <h3>Barclays</h3>
+                                                <span class="role">Quantitative Analyst Intern</span>
+                                            </div>
+                                            <span class="date">Jun 2024 - Aug 2024</span>
+                                        </div>
+                                        <ul>
+                                            <li>Developed and tested credit risk driver hypotheses using 4M+ data points.</li>
+                                            <li>Deployed models to production after statistical validation against 20 years of historical data.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="item-header">
+                                            <div class="title-block">
+                                                <h3>The Travelers Companies</h3>
+                                                <span class="role">Software Engineer Intern</span>
+                                            </div>
+                                            <span class="date">Jun 2023 - Aug 2023</span>
+                                        </div>
+                                        <ul>
+                                            <li>Designed Java OKTA security protocol for LDAP authentication.</li>
+                                            <li>Deployed enhancements via CI/CD pipelines using Jenkins, Docker, & Terraform.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="side-content">
+                            <div class="side-block">
+                                <h2>Education</h2>
+                                <div class="education-card">
+                                    <h3>Columbia University</h3>
+                                    <span class="degree">Double BA in Computer Science & Mathematics-Statistics</span>
+                                    <span class="year">2022 - 2026</span>
+                                    
+                                    <div class="coursework">
+                                        <h4>Key Coursework</h4>
+                                        <div class="course-tags">
+                                            <span>AI</span>
+                                            <span>ML</span>
+                                            <span>NLP</span>
+                                            <span>Linear Regression</span>
+                                            <span>Statistical Inference</span>
+                                            <span>Discrete Math (TA)</span>
+                                            <span>Data Structures</span>
+                                            <span>Algorithms</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="side-block">
+                                <h2>Technical Skills</h2>
+                                <div class="skills-card">
+                                    <div class="skill-group">
+                                        <h4>Languages</h4>
+                                        <div class="skill-tags">
+                                            <span>Python</span>
+                                            <span>Java</span>
+                                            <span>SQL</span>
+                                            <span>C</span>
+                                            <span>Bash</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-group">
+                                        <h4>ML/Data Science</h4>
+                                        <div class="skill-tags">
+                                            <span>TensorFlow</span>
+                                            <span>Keras</span>
+                                            <span>PyTorch</span>
+                                            <span>Hugging Face</span>
+                                            <span>pandas</span>
+                                            <span>scikit-learn</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-group">
+                                        <h4>Tools & Infrastructure</h4>
+                                        <div class="skill-tags">
+                                            <span>AWS</span>
+                                            <span>Azure</span>
+                                            <span>Docker</span>
+                                            <span>Git</span>
+                                            <span>MongoDB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
