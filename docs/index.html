@@ -8,68 +8,109 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="nav-link active">About</a>
-            <a href="portfolio.html" class="nav-link">Portfolio</a>
-            <a href="resume.html" class="nav-link">Resume</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-        </div>
-    </nav>
-
-    <main class="container">
-        <section class="hero">
-            <div class="hero-content">
-                <div class="profile-section">
-                    <img src="/api/placeholder/300/300" alt="Charles Wang" class="profile-image">
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/charles-l-wang/" target="_blank" class="social-link">LinkedIn</a>
-                        <a href="https://github.com/charleslwang" target="_blank" class="social-link">GitHub</a>
-                    </div>
-                </div>
-                <div class="hero-text">
-                    <h1>Charles Wang</h1>
-                    <h2>Computer Science, Mathematics & Statistics Student</h2>
-                    <p class="location">Columbia University • New York, NY</p>
+    <div class="page-wrapper">
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active">About</a>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    <a href="resume.html" class="nav-link">Resume</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
                 </div>
             </div>
-        </section>
+        </nav>
 
-        <section class="about">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>Hi! I'm Charles, and I'm a third year at Columbia University double majoring in Computer Science and Mathematics-Statistics. Last summer, I worked as a Quantitative Risk Intern, where I developed several machine learning benchmark models for credit risk forecasting. I've done AI & ML research within the Columbia Business School's Decision, Risk, and Operations division, as well as at an AI consulting firm called ask2.ai.</p>
-                <p>Previously, I worked at The Travelers Companies as a Software Engineering Intern, developing security protocols for their internal databases. My long-term goals are in artificial intelligence, machine learning, or quantitative research. I grew up in West Hartford, CT, and I'm now living in New York City. I am an avid singer and music producer, I love exploring new cuisines and restaurants in the city, watching lacrosse, and making cinematic drone videos.</p>
-            </div>
-        </section>
-
-        <section class="experience">
-            <h2 class="section-title">Experience</h2>
-            <div class="company-logos">
-                <div class="logo-grid">
-                    <div class="logo-item fade-in">
-                        <img src="docs/images/barclays.jpg" alt="Barclays" class="company-logo">
-                        <span class="logo-caption">Barclays</span>
+        <main>
+            <div class="hero-section">
+                <div class="hero-content">
+                    <div class="profile-wrapper">
+                        <div class="profile-image-container">
+                            <img src="/api/placeholder/300/300" alt="Charles Wang" class="profile-image">
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/charles-l-wang/" target="_blank" class="social-link">
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://github.com/charleslwang" target="_blank" class="social-link">
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="logo-item fade-in">
-                        <img src="docs/images/cbs.jpg" alt="Columbia Business School" class="company-logo">
-                        <span class="logo-caption">Columbia Business School</span>
-                    </div>
-                    <div class="logo-item fade-in">
-                        <img src="docs/images/skc.jpeg" alt="Steel Key Capital" class="company-logo">
-                        <span class="logo-caption">Steel Key Capital</span>
-                    </div>
-                    <div class="logo-item fade-in">
-                        <img src="docs/images/ask2ai.png" alt="ask2.ai" class="company-logo">
-                        <span class="logo-caption">ask2.ai</span>
-                    </div>
-                    <div class="logo-item fade-in">
-                        <img src="docs/images/travelers.png" alt="Travelers" class="company-logo">
-                        <span class="logo-caption">Travelers</span>
+                    <div class="hero-text">
+                        <h1>Charles Wang</h1>
+                        <h2>Computer Science & Mathematics-Statistics</h2>
+                        <div class="location-badge">Columbia University • New York, NY</div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+
+            <section class="about-section">
+                <div class="section-content">
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p>Hi! I'm Charles, and I'm a third year at Columbia University double majoring in Computer Science and Mathematics-Statistics. Last summer, I worked as a Quantitative Risk Intern, where I developed several machine learning benchmark models for credit risk forecasting.</p>
+                            <p>I've done AI & ML research within the Columbia Business School's Decision, Risk, and Operations division, as well as at an AI consulting firm called ask2.ai. Previously, I worked at The Travelers Companies as a Software Engineering Intern, developing security protocols for their internal databases.</p>
+                        </div>
+                        <div class="about-focus">
+                            <div class="focus-item">
+                                <h3>Focus Areas</h3>
+                                <div class="focus-tags">
+                                    <span>Artificial Intelligence</span>
+                                    <span>Machine Learning</span>
+                                    <span>Quantitative Research</span>
+                                </div>
+                            </div>
+                            <div class="focus-item">
+                                <h3>Interests</h3>
+                                <div class="focus-tags">
+                                    <span>Music Production</span>
+                                    <span>Drone Videography</span>
+                                    <span>Lacrosse</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience-section">
+                <div class="section-content">
+                    <h2>Experience</h2>
+                    <div class="company-grid">
+                        <div class="company-card">
+                            <img src="docs/images/barclays.jpg" alt="Barclays" class="company-logo">
+                            <div class="company-overlay">
+                                <span>Quantitative Analysis</span>
+                            </div>
+                        </div>
+                        <div class="company-card">
+                            <img src="docs/images/cbs.jpg" alt="Columbia Business School" class="company-logo">
+                            <div class="company-overlay">
+                                <span>Research</span>
+                            </div>
+                        </div>
+                        <div class="company-card">
+                            <img src="docs/images/skc.jpeg" alt="Steel Key Capital" class="company-logo">
+                            <div class="company-overlay">
+                                <span>Digital Assets</span>
+                            </div>
+                        </div>
+                        <div class="company-card">
+                            <img src="docs/images/ask2ai.png" alt="ask2.ai" class="company-logo">
+                            <div class="company-overlay">
+                                <span>AI Research</span>
+                            </div>
+                        </div>
+                        <div class="company-card">
+                            <img src="docs/images/travelers.png" alt="Travelers" class="company-logo">
+                            <div class="company-overlay">
+                                <span>Software Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
