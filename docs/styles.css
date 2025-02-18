@@ -37,16 +37,16 @@ body {
 .split-layout {
     display: flex;
     flex: 1;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 60px); /* Reduced from 80px */
 }
 
 /* Bio Section (Left) */
 .bio-section {
-    width: 380px;
+    width: 340px; /* Reduced from 380px */
     background: var(--bg-secondary);
-    padding: 2.5rem 2rem;
+    padding: 2rem 1.5rem; /* Reduced padding */
     position: fixed;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 60px);
     overflow-y: auto;
     border-right: 1px solid var(--border);
 }
@@ -63,16 +63,16 @@ body {
 }
 
 .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 120px; /* Reduced size */
+    height: 120px;
     border-radius: 50%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem; /* Reduced margin */
     object-fit: cover;
     box-shadow: var(--shadow-md);
 }
 
 h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem; /* Reduced font size */
     margin-bottom: 0.5rem;
     color: var(--text-primary);
 }
@@ -274,15 +274,15 @@ h1 {
 /* Portfolio Section */
 .portfolio-section {
     flex: 1;
-    margin-left: 380px;
-    padding: 2.5rem;
+    margin-left: 340px; /* Match bio-section width */
+    padding: 1.5rem; /* Reduced padding */
     overflow-y: auto;
 }
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Smaller cards */
+    gap: 1rem; /* Reduced gap */
 }
 
 .project-card {
@@ -359,24 +359,24 @@ h1 {
 
 /* Company Strip */
 .company-strip {
-    height: 80px;
+    height: 60px; /* Reduced height */
     background: var(--bg-secondary);
     border-top: 1px solid var(--border);
 }
 
 .logo-container {
-    max-width: 1200px;
+    max-width: 1000px; /* Reduced max-width */
     margin: 0 auto;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-    padding: 0 2rem;
+    gap: 2.5rem; /* Reduced gap */
+    padding: 0 1.5rem; /* Reduced padding */
 }
 
 .company-logo {
-    height: 40px;
+    height: 30px; /* Reduced height */
     object-fit: contain;
     opacity: 0.7;
     transition: all 0.3s ease;
