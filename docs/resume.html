@@ -3,159 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Charles Wang</title>
+    <title>Charles Wang - Portfolio</title>
     <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css" rel="stylesheet">
 </head>
 <body>
-    <div class="cyber-grid">
-        <nav class="nav-center flex justify-center">
+    <nav class="navbar">
+        <div class="container nav-container">
             <a href="index.html" class="nav-link">About</a>
-            <a href="portfolio.html" class="nav-link">Portfolio</a>
-            <a href="resume.html" class="nav-link active">Resume</a>
+            <a href="portfolio.html" class="nav-link active">Portfolio</a>
+            <a href="resume.html" class="nav-link">Resume</a>
             <a href="contact.html" class="nav-link">Contact</a>
-        </nav>
-
-        <div class="container mx-auto max-w-4xl text-center" role="main">
-            <div class="resume-header mb-8">
-                <h1 class="cyber-glitch-text mb-4">Charles L. Wang</h1>
-                <div class="contact-info space-x-4">
-                    <span class="cyber-text">860-593-0729</span>
-                    <span class="cyber-text">charleslw2017@gmail.com</span>
-                    <a href="https://www.linkedin.com/in/charles-l-wang/" class="cyber-link" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-
-            <section class="resume-section mb-8">
-                <h2 class="cyber-heading mb-4">Education</h2>
-                <div class="cyber-panel p-6">
-                    <h3 class="cyber-subheading mb-4">Columbia University, NY (2022-2026)</h3>
-                    <div class="education-details">
-                        <div class="cyber-detail mb-4">
-                            <span class="detail-label">Major:</span>
-                            <span class="detail-text">Computer Science & Mathematics-Statistics</span>
-                        </div>
-                        <div class="cyber-detail">
-                            <div class="cyber-box">
-                                <h3 class="cyber-subheading">Relevant Coursework</h3>
-                                <div class="course-tags flex flex-wrap justify-center gap-2 mt-2">
-                                    <span class="cyber-tag">Analysis of Algorithms</span>
-                                    <span class="cyber-tag">Analysis & Optimization</span>
-                                    <span class="cyber-tag">Elementary Stochastic Processes</span>
-                                    <span class="cyber-tag">Natural Language Processing</span>
-                                    <span class="cyber-tag">Data Structures</span>
-                                    <span class="cyber-tag">Advanced Programming</span>
-                                    <span class="cyber-tag">Fundamentals of Computer Systems</span>
-                                    <span class="cyber-tag">Computer Science Theory</span>
-                                    <span class="cyber-tag">Linear Algebra</span>
-                                    <span class="cyber-tag">Calc-Based Statistics</span>
-                                    <span class="cyber-tag">Probability Theory</span>
-                                    <span class="cyber-tag">Multivariable Calculus</span>
-                                    <span class="cyber-tag">Artificial Intelligence</span>
-                                    <span class="cyber-tag">Intro to Databases</span>
-                                    <span class="cyber-tag">Intermediate Macroeconomics</span>
-                                    <span class="cyber-tag">Intermediate Microeconomics</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="resume-section mb-8">
-                <h2 class="cyber-heading mb-4">Experience</h2>
-                <div class="cyber-panel p-6">
-                    <!-- Barclays -->
-                    <div class="experience-item mb-8">
-                        <div class="experience-header flex justify-between items-center mb-2">
-                            <h3 class="cyber-subheading">Barclays</h3>
-                            <span class="cyber-date">Jun 2024 - Aug 2024</span>
-                        </div>
-                        <h4 class="cyber-role mb-2">Quantitative Analyst Intern</h4>
-                        <ul class="experience-details text-left list-disc pl-6">
-                            <li>Modeled 9Q projections of credit risk and capital adequacy using 18 years of macro data (4 million+ data points)</li>
-                            <li>Backtested forecasts against 20 years of historical credit losses and achieved 98% accuracy in forecasts</li>
-                            <li>Developed 4000+ linear regression models w/ Lasso & Ridge and 100+ ML models (random forest, gradient boosting)</li>
-                        </ul>
-                    </div>
-
-                    <!-- ask2.ai -->
-                    <div class="experience-item mb-8">
-                        <div class="experience-header flex justify-between items-center mb-2">
-                            <h3 class="cyber-subheading">ask2.ai</h3>
-                            <span class="cyber-date">Oct 2023 - Jan 2024</span>
-                        </div>
-                        <h4 class="cyber-role mb-2">AI/ML Research Intern</h4>
-                        <ul class="experience-details text-left list-disc pl-6">
-                            <li>Developed stock buyback strategies using geometric Brownian motion simulations and genetic algorithms</li>
-                            <li>Optimized strategy using temporal optionality - outperformed benchmarks across varying volatility and drift</li>
-                        </ul>
-                    </div>
-
-                    <!-- Travelers -->
-                    <div class="experience-item mb-8">
-                        <div class="experience-header flex justify-between items-center mb-2">
-                            <h3 class="cyber-subheading">The Travelers Companies</h3>
-                            <span class="cyber-date">Jun 2023 - Aug 2023</span>
-                        </div>
-                        <h4 class="cyber-role mb-2">Software Engineering Intern</h4>
-                        <ul class="experience-details text-left list-disc pl-6">
-                            <li>Integrated Java OKTA security protocol into LDAP authentication database, which handles user login & access</li>
-                            <li>Redesigned underwriting app's UI/UX, streamlining frontend and backend for improved performance</li>
-                        </ul>
-                    </div>
-
-                    <!-- Columbia Business School -->
-                    <div class="experience-item mb-8">
-                        <div class="experience-header flex justify-between items-center mb-2">
-                            <h3 class="cyber-subheading">Columbia Business School</h3>
-                            <span class="cyber-date">Sep 2023 - Nov 2023</span>
-                        </div>
-                        <h4 class="cyber-role mb-2">Quantitative Research Assistant</h4>
-                        <ul class="experience-details text-left list-disc pl-6">
-                            <li>Developed case study for graduate school business school optimization course based on Vanguard Fixed Income Trading's use of Gurobi Optimization in ETF trading</li>
-                        </ul>
-                    </div>
-
-                    <!-- Steel Key Capital -->
-                    <div class="experience-item">
-                        <div class="experience-header flex justify-between items-center mb-2">
-                            <h3 class="cyber-subheading">Steel Key Capital</h3>
-                            <span class="cyber-date">Feb 2024 - Apr 2024</span>
-                        </div>
-                        <h4 class="cyber-role mb-2">Research Analyst Intern</h4>
-                        <ul class="experience-details text-left list-disc pl-6">
-                            <li>Digital assets research at a $10 million+ AUM liquid token hedge fund (focused on crypto & DeFIN protocols)</li>
-                            <li>Responsible for management outreach, led interviews with C-suite executive, & performed investment due diligence</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="resume-section mb-8">
-                <h2 class="cyber-heading mb-4">Technical Skills</h2>
-                <div class="cyber-panel p-6">
-                    <div class="skills-cloud flex flex-wrap justify-center gap-2">
-                        <span class="cyber-tag">Python</span>
-                        <span class="cyber-tag">Java</span>
-                        <span class="cyber-tag">SQL</span>
-                        <span class="cyber-tag">C/C++</span>
-                        <span class="cyber-tag">TensorFlow</span>
-                        <span class="cyber-tag">PyTorch</span>
-                        <span class="cyber-tag">Git</span>
-                        <span class="cyber-tag">React</span>
-                    </div>
-                </div>
-            </section>
-
-            <div class="resume-download">
-                <a href="resume.pdf" class="cyber-button mx-auto inline-block" download>
-                    <span class="button-text">Download Full Resume</span>
-                    <span class="button-glitch"></span>
-                </a>
-            </div>
         </div>
-    </div>
+    </nav>
+
+    <main class="container">
+        <section class="portfolio-section">
+            <h1 class="section-title">Featured Work</h1>
+            
+            <!-- Featured Project - Startup -->
+            <div class="featured-project">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>Lumara</h2>
+                        <div class="project-tags">
+                            <span class="tag">Startup</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Education</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        An AI-powered platform democratizing access to verified mentorship across all domains of learning.
+                        Currently serving as Founder and Lead Engineer.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://lumaraai.xyz" target="_blank" class="project-link">Visit Project →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Projects -->
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Historical Movement Pattern Analysis</h3>
+                        <div class="project-tags">
+                            <span class="tag">Research</span>
+                            <span class="tag">ML</span>
+                            <span class="tag">Mathematics</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Led MCM 2025 team in developing a novel framework combining stochastic wear equations and 
+                        differential systems to reconstruct historical movement patterns in archaeological sites.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://charleslwang.github.io/stairways-analysis" target="_blank" class="project-link">View Research →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Share Repurchase Strategy</h3>
+                        <div class="project-tags">
+                            <span class="tag">Research</span>
+                            <span class="tag">Finance</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Developed an optimized trading execution strategy using genetic algorithms and 
+                        geometric Brownian motion simulations, with comprehensive statistical validation.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://charleslwang.github.io/ga-repurchase" target="_blank" class="project-link">View Research →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>ML Research at Columbia</h3>
+                        <div class="project-tags">
+                            <span class="tag">Research</span>
+                            <span class="tag">ML</span>
+                            <span class="tag">LLMs</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Developing novel latent reasoning benchmarks and test-time scaling techniques 
+                        to enhance LLM reasoning without retraining, focusing on Chain of Continuous Thought.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://charleslwang.github.io/llm-research" target="_blank" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
