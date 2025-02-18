@@ -5,66 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charles Wang - Portfolio</title>
     <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css" rel="stylesheet">
 </head>
-<body class="cyber-bg">
-    <div class="cyber-grid">
-        <nav class="nav-center flex justify-center">
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
             <a href="index.html" class="nav-link">About</a>
             <a href="portfolio.html" class="nav-link active">Portfolio</a>
             <a href="resume.html" class="nav-link">Resume</a>
             <a href="contact.html" class="nav-link">Contact</a>
-        </nav>
+        </div>
+    </nav>
 
-        <main class="container mx-auto max-w-4xl text-center">
-            <h1 class="cyber-glitch-text">Portfolio</h1>
-
-            <div class="project-grid">
-                <a href="https://github.com/charleslwang/AIGeneratedMusic" class="cyber-card project-link" target="_blank">
-                    <div class="card-header">
-                        <img src="/api/placeholder/400/200" alt="AI Music Producer" class="project-image">
-                        <div class="cyber-overlay">
-                            <span class="cyber-badge">AI/ML</span>
-                            <h3 class="project-title">AI-Generated Music Producer</h3>
-                            <p class="project-description">An AI tool for music generation with synthesized vocals using user inputs.</p>
+    <main class="container">
+        <section class="portfolio-section">
+            <h1 class="section-title">Featured Work</h1>
+            
+            <!-- Featured Project - Startup -->
+            <div class="featured-project">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>Lumara</h2>
+                        <div class="project-tags">
+                            <span class="tag">Startup</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Education</span>
                         </div>
                     </div>
-                </a>
-
-                <a href="https://github.com/charleslwang/PFDM" class="cyber-card project-link" target="_blank">
-                    <div class="card-header">
-                        <img src="/api/placeholder/400/200" alt="Fraud Detection" class="project-image">
-                        <div class="cyber-overlay">
-                            <span class="cyber-badge">Security</span>
-                            <h3 class="project-title">Payment Transactions Fraud Detection</h3>
-                            <p class="project-description">A fraud detection system that flags anomalous transactions using ML.</p>
-                        </div>
+                    <p class="project-description">
+                        An AI-powered platform democratizing access to verified mentorship across all domains of learning.
+                        Currently serving as Founder and Lead Engineer.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://lumaraai.xyz" target="_blank" class="project-link">Visit Project →</a>
                     </div>
-                </a>
-
-                <a href="https://github.com/charleslwang/AsteroidTrajectories" class="cyber-card project-link" target="_blank">
-                    <div class="card-header">
-                        <img src="/api/placeholder/400/200" alt="Asteroid Tracker" class="project-image">
-                        <div class="cyber-overlay">
-                            <span class="cyber-badge">Space</span>
-                            <h3 class="project-title">Asteroid Trajectory Forecast Model</h3>
-                            <p class="project-description">Forecasts asteroid trajectories to assess collision risks with Earth.</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://github.com/charleslwang/RTMD" class="cyber-card project-link" target="_blank">
-                    <div class="card-header">
-                        <img src="/api/placeholder/400/200" alt="Stock Dashboard" class="project-image">
-                        <div class="cyber-overlay">
-                            <span class="cyber-badge">Finance</span>
-                            <h3 class="project-title">Stock Dashboard w/ ML Forecast</h3>
-                            <p class="project-description">A real-time dashboard that tracks stock prices and visualizes ML insights.</p>
-                        </div>
-                    </div>
-                </a>
+                </div>
             </div>
 
-        </main>
-    </div>
+            <!-- Research Projects -->
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Historical Movement Pattern Analysis</h3>
+                        <div class="project-tags">
+                            <span class="tag">Research</span>
+                            <span class="tag">ML</span>
+                            <span class="tag">Mathematics</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Led MCM 2025 team in developing a novel framework combining stochastic wear equations and 
+                        differential systems to reconstruct historical movement patterns in archaeological sites.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://charleslwang.github.io/stairways-analysis" target="_blank" class="project-link">View Research →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Share Repurchase Strategy</h3>
+                        <div class="project-tags">
+                            <span class="tag">Research</span>
+                            <span class="tag">Finance</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Developed an optimized trading execution strategy using genetic algorithms and 
+                        geometric Brownian motion simulations, with comprehensive statistical validation.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://charleslwang.github.io/ga-repurchase" target="_blank" class="project-link">View Research →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>ML Research at Columbia</h3>
+                        <div class="project-tags">
+                            <span class="tag">Research</span>
+                            <span class="tag">ML</span>
+                            <span class="tag">LLMs</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Developing novel latent reasoning benchmarks and test-time scaling techniques 
+                        to enhance LLM reasoning without retraining, focusing on Chain of Continuous Thought.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://charleslwang.github.io/llm-research" target="_blank" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
