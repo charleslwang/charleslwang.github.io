@@ -9,108 +9,113 @@
 </head>
 <body>
     <div class="page-wrapper">
-        <nav class="navbar">
-            <div class="nav-content">
-                <div class="nav-links">
-                    <a href="index.html" class="nav-link active">About</a>
-                    <a href="portfolio.html" class="nav-link">Portfolio</a>
-                    <a href="resume.html" class="nav-link">Resume</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </div>
-            </div>
-        </nav>
-
-        <main>
-            <div class="hero-section">
-                <div class="hero-content">
-                    <div class="profile-wrapper">
-                        <div class="profile-image-container">
-                            <img src="/api/placeholder/300/300" alt="Charles Wang" class="profile-image">
-                            <div class="social-links">
-                                <a href="https://www.linkedin.com/in/charles-l-wang/" target="_blank" class="social-link">
-                                    <span>LinkedIn</span>
-                                </a>
-                                <a href="https://github.com/charleslwang" target="_blank" class="social-link">
-                                    <span>GitHub</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-text">
+        <div class="split-layout">
+            <!-- Left Column - Bio Section -->
+            <div class="bio-section">
+                <div class="bio-content">
+                    <div class="profile-section">
+                        <img src="/api/placeholder/300/300" alt="Charles Wang" class="profile-image">
                         <h1>Charles Wang</h1>
-                        <h2>Computer Science & Mathematics-Statistics</h2>
-                        <div class="location-badge">Columbia University • New York, NY</div>
+                        <div class="bio-subtitle">Computer Science & Mathematics-Statistics</div>
+                        <div class="bio-location">Columbia University • New York, NY</div>
+                    </div>
+
+                    <div class="bio-text">
+                        <p>Hi! I'm Charles, and I'm a third year at Columbia University double majoring in Computer Science and Mathematics-Statistics.</p>
+                        <p>My work spans AI/ML research, quantitative analysis, and software engineering. I'm currently building Lumara, an AI-powered platform democratizing access to verified mentorship.</p>
+                    </div>
+
+                    <div class="education-section">
+                        <h2>Education</h2>
+                        <div class="education-content">
+                            <h3>Columbia University</h3>
+                            <div class="degree">Double BA, CS & Math-Stats</div>
+                            <div class="year">2022 - 2026</div>
+                            <div class="course-highlights">
+                                <span>AI</span>
+                                <span>ML</span>
+                                <span>NLP</span>
+                                <span>Data Structures</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/charles-l-wang/" target="_blank">LinkedIn</a>
+                        <a href="mailto:charleslw2017@gmail.com">Email</a>
+                        <a href="resume.pdf" download>Resume</a>
                     </div>
                 </div>
             </div>
 
-            <section class="about-section">
-                <div class="section-content">
-                    <div class="about-grid">
-                        <div class="about-text">
-                            <p>Hi! I'm Charles, and I'm a third year at Columbia University double majoring in Computer Science and Mathematics-Statistics. Last summer, I worked as a Quantitative Risk Intern, where I developed several machine learning benchmark models for credit risk forecasting.</p>
-                            <p>I've done AI & ML research within the Columbia Business School's Decision, Risk, and Operations division, as well as at an AI consulting firm called ask2.ai. Previously, I worked at The Travelers Companies as a Software Engineering Intern, developing security protocols for their internal databases.</p>
-                        </div>
-                        <div class="about-focus">
-                            <div class="focus-item">
-                                <h3>Focus Areas</h3>
-                                <div class="focus-tags">
-                                    <span>Artificial Intelligence</span>
-                                    <span>Machine Learning</span>
-                                    <span>Quantitative Research</span>
-                                </div>
-                            </div>
-                            <div class="focus-item">
-                                <h3>Interests</h3>
-                                <div class="focus-tags">
-                                    <span>Music Production</span>
-                                    <span>Drone Videography</span>
-                                    <span>Lacrosse</span>
-                                </div>
+            <!-- Right Column - Portfolio Grid -->
+            <div class="portfolio-section">
+                <div class="portfolio-grid">
+                    <!-- Lumara -->
+                    <div class="project-card">
+                        <img src="/api/placeholder/600/400" alt="Lumara" class="project-image">
+                        <div class="project-overlay">
+                            <h3>Lumara</h3>
+                            <p>AI-powered platform democratizing access to verified mentorship across all domains of learning.</p>
+                            <div class="project-tags">
+                                <span>Startup</span>
+                                <span>AI</span>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
 
-            <section class="experience-section">
-                <div class="section-content">
-                    <h2>Experience</h2>
-                    <div class="company-grid">
-                        <div class="company-card">
-                            <img src="docs/images/barclays.jpg" alt="Barclays" class="company-logo">
-                            <div class="company-overlay">
-                                <span>Quantitative Analysis</span>
-                            </div>
-                        </div>
-                        <div class="company-card">
-                            <img src="docs/images/cbs.jpg" alt="Columbia Business School" class="company-logo">
-                            <div class="company-overlay">
+                    <!-- ML Research -->
+                    <div class="project-card">
+                        <img src="/api/placeholder/600/400" alt="ML Research" class="project-image">
+                        <div class="project-overlay">
+                            <h3>Latent Reasoning Research</h3>
+                            <p>Developing novel benchmarks and test-time scaling techniques for enhanced LLM reasoning.</p>
+                            <div class="project-tags">
                                 <span>Research</span>
+                                <span>ML</span>
                             </div>
                         </div>
-                        <div class="company-card">
-                            <img src="docs/images/skc.jpeg" alt="Steel Key Capital" class="company-logo">
-                            <div class="company-overlay">
-                                <span>Digital Assets</span>
+                    </div>
+
+                    <!-- Movement Analysis -->
+                    <div class="project-card">
+                        <img src="/api/placeholder/600/400" alt="Movement Analysis" class="project-image">
+                        <div class="project-overlay">
+                            <h3>Historical Movement Analysis</h3>
+                            <p>Framework combining stochastic wear equations and differential systems for archaeological movement pattern reconstruction.</p>
+                            <div class="project-tags">
+                                <span>Research</span>
+                                <span>Mathematics</span>
                             </div>
                         </div>
-                        <div class="company-card">
-                            <img src="docs/images/ask2ai.png" alt="ask2.ai" class="company-logo">
-                            <div class="company-overlay">
-                                <span>AI Research</span>
-                            </div>
-                        </div>
-                        <div class="company-card">
-                            <img src="docs/images/travelers.png" alt="Travelers" class="company-logo">
-                            <div class="company-overlay">
-                                <span>Software Engineering</span>
+                    </div>
+
+                    <!-- Trading Strategy -->
+                    <div class="project-card">
+                        <img src="/api/placeholder/600/400" alt="Trading Strategy" class="project-image">
+                        <div class="project-overlay">
+                            <h3>Share Repurchase Strategy</h3>
+                            <p>Optimized trading execution using genetic algorithms and geometric Brownian motion simulations.</p>
+                            <div class="project-tags">
+                                <span>Finance</span>
+                                <span>Algorithms</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </div>
+
+        <!-- Company Logos Strip -->
+        <div class="company-strip">
+            <div class="logo-container">
+                <img src="docs/images/barclays.jpg" alt="Barclays" class="company-logo">
+                <img src="docs/images/cbs.jpg" alt="Columbia Business School" class="company-logo">
+                <img src="docs/images/skc.jpeg" alt="Steel Key Capital" class="company-logo">
+                <img src="docs/images/ask2ai.png" alt="ask2.ai" class="company-logo">
+                <img src="docs/images/travelers.png" alt="Travelers" class="company-logo">
+            </div>
+        </div>
     </div>
 </body>
 </html>
