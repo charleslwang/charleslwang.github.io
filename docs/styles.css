@@ -259,8 +259,8 @@ h2 {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -269,7 +269,7 @@ h2 {
     position: relative;
     border-radius: 0.75rem;
     overflow: hidden;
-    aspect-ratio: 3/2;
+    aspect-ratio: 4/3;
     text-decoration: none;
     box-shadow: var(--shadow-sm);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -309,6 +309,22 @@ h2 {
 }
 
 .project-card:hover .project-info {
+    transform: translateY(0);
+}
+
+.project-card:hover .project-info p {
+    opacity: 0.9;
+    transform: translateY(0);
+}
+
+.project-info .project-tags {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-info .project-tags {
+    opacity: 1;
     transform: translateY(0);
 }
 
