@@ -3,102 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charles Wang - Portfolio</title>
+    <title>Portfolio - Charles Wang</title>
     <link href="styles.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="nav-link">About</a>
-            <a href="portfolio.html" class="nav-link active">Portfolio</a>
-            <a href="resume.html" class="nav-link">Resume</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-        </div>
-    </nav>
-
-    <main class="container">
-        <section class="portfolio-section">
-            <h1 class="section-title">Featured Work</h1>
-            
-            <!-- Featured Project - Startup -->
-            <div class="featured-project">
-                <div class="project-content">
-                    <div class="project-header">
-                        <h2>Lumara</h2>
-                        <div class="project-tags">
-                            <span class="tag">Startup</span>
-                            <span class="tag">AI</span>
-                            <span class="tag">Education</span>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        An AI-powered platform democratizing access to verified mentorship across all domains of learning.
-                        Currently serving as Founder and Lead Engineer.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://lumaraai.xyz" target="_blank" class="project-link">Visit Project →</a>
-                    </div>
+    <div class="page-wrapper">
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">About</a>
+                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                    <a href="resume.html" class="nav-link">Resume</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
                 </div>
             </div>
+        </nav>
 
-            <!-- Research Projects -->
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Historical Movement Pattern Analysis</h3>
-                        <div class="project-tags">
-                            <span class="tag">Research</span>
-                            <span class="tag">ML</span>
-                            <span class="tag">Mathematics</span>
+        <main>
+            <section class="portfolio-hero">
+                <div class="section-content">
+                    <h1>Featured Work</h1>
+                </div>
+            </section>
+
+            <section class="featured-project">
+                <div class="section-content">
+                    <div class="project-spotlight">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h2>Lumara</h2>
+                                <div class="project-tags">
+                                    <span>Startup</span>
+                                    <span>AI</span>
+                                    <span>Education</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Founding and building Lumara (lumaraai.xyz), an AI-powered platform democratizing access 
+                                to verified mentorship across all domains of learning.
+                            </p>
+                            <a href="https://lumaraai.xyz" target="_blank" class="project-link">
+                                Visit Project →
+                            </a>
+                        </div>
+                        <div class="project-image">
+                            <img src="/api/placeholder/600/400" alt="Lumara Platform">
                         </div>
                     </div>
-                    <p class="project-description">
-                        Led MCM 2025 team in developing a novel framework combining stochastic wear equations and 
-                        differential systems to reconstruct historical movement patterns in archaeological sites.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://charleslwang.github.io/stairways-analysis" target="_blank" class="project-link">View Research →</a>
-                    </div>
                 </div>
+            </section>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Share Repurchase Strategy</h3>
-                        <div class="project-tags">
-                            <span class="tag">Research</span>
-                            <span class="tag">Finance</span>
-                            <span class="tag">Algorithms</span>
+            <section class="research-projects">
+                <div class="section-content">
+                    <h2 class="section-title">Research Projects</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <span class="project-category">ML Research</span>
+                                    <h3>Latent Reasoning Benchmark</h3>
+                                </div>
+                                <p>Working with Prof. Micah Goldblum at Columbia Engineering to develop novel latent 
+                                reasoning benchmarks and test-time scaling techniques for enhanced LLM reasoning.</p>
+                                <div class="project-tags">
+                                    <span>Machine Learning</span>
+                                    <span>LLMs</span>
+                                    <span>Research</span>
+                                </div>
+                                <a href="https://charleslwang.github.io/llm-research" class="card-link">
+                                    View Research →
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <span class="project-category">Historical Analysis</span>
+                                    <h3>Movement Pattern Analysis</h3>
+                                </div>
+                                <p>Led MCM 2025 team in developing a framework combining stochastic wear equations 
+                                and differential systems to reconstruct historical movement patterns.</p>
+                                <div class="project-tags">
+                                    <span>Mathematics</span>
+                                    <span>Statistical Analysis</span>
+                                    <span>Research</span>
+                                </div>
+                                <a href="https://charleslwang.github.io/stairways-analysis" class="card-link">
+                                    View Research →
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <span class="project-category">Financial Trading</span>
+                                    <h3>Share Repurchase Strategy</h3>
+                                </div>
+                                <p>Developed an optimized trading execution strategy using genetic algorithms and 
+                                geometric Brownian motion simulations with statistical validation.</p>
+                                <div class="project-tags">
+                                    <span>Algorithms</span>
+                                    <span>Finance</span>
+                                    <span>Research</span>
+                                </div>
+                                <a href="https://charleslwang.github.io/ga-repurchase" class="card-link">
+                                    View Research →
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <p class="project-description">
-                        Developed an optimized trading execution strategy using genetic algorithms and 
-                        geometric Brownian motion simulations, with comprehensive statistical validation.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://charleslwang.github.io/ga-repurchase" target="_blank" class="project-link">View Research →</a>
-                    </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>ML Research at Columbia</h3>
-                        <div class="project-tags">
-                            <span class="tag">Research</span>
-                            <span class="tag">ML</span>
-                            <span class="tag">LLMs</span>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Developing novel latent reasoning benchmarks and test-time scaling techniques 
-                        to enhance LLM reasoning without retraining, focusing on Chain of Continuous Thought.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://charleslwang.github.io/llm-research" target="_blank" class="project-link">View Project →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
