@@ -58,6 +58,8 @@ a:hover {
   overflow-y: auto;
   border-right: 1px solid rgba(201, 168, 122, 0.15);
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  /* Add padding at bottom to prevent overlap with footer */
+  padding-bottom: calc(3rem + 100px);
 }
 
 .profile-section {
