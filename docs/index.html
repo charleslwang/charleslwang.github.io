@@ -1,206 +1,209 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charles Wang</title>
-    <link href="styles.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css" rel="stylesheet">
-</head>
 <body>
     <div class="site-container">
-        <!-- Left Panel -->
-        <aside class="info-panel">
-            <div class="profile-section">
-                <div class="profile-wrapper">
-                    <img src="Charles_Wang.jpeg" alt="Charles Wang" class="profile-image">
+        <!-- Header with Profile -->
+        <header>
+            <div class="profile-wrapper">
+                <img src="Charles_Wang.jpeg" alt="Charles Wang" class="profile-image">
+                <div class="profile-details">
                     <h1>Charles Wang</h1>
                     <div class="profile-subtitle">Computer Science & Mathematics-Statistics</div>
                     <div class="profile-location">Columbia University • New York, NY</div>
                 </div>
             </div>
+        </header>
 
-            <div class="bio-section">
-                <p>Hi! I'm Charles, and I'm a third year at Columbia University double majoring in Computer Science and Mathematics-Statistics.</p>
-                <p>My interests lie in quantum-accelerated AI systems, and I'm most recently working on multimodal LLM reasoning. </p>
-                <p> Most recent favorite shell command: git ls-files | xargs wc -l </p>
-                <p>Email: charleslw2017@gmail.com</p>
-            </div>
-
-            <div class="experience-section">
-                <h2>Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="role-header">
-                                <h3>Columbia Engineering</h3>
-                                <span class="role">Undergraduate Researcher</span>
-                                <span class="date">Dec 2024 - Present</span>
-                            </div>
-                            <p>Novel latent reasoning benchmarks and test-time scaling techniques for LLMs.</p>
-                            <div class="skill-tags">
-                                <span>ML</span>
-                                <span>LLMs</span>
-                                <span>Research</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="role-header">
-                                <h3>Steel Key Capital</h3>
-                                <span class="role">Research Analyst</span>
-                                <span class="date">Feb 2024 - Apr 2024</span>
-                            </div>
-                            <p>Digital assets research at $10M+ AUM liquid token hedge fund focused on crypto & DeFi protocols.</p>
-                            <div class="skill-tags">
-                                <span>DeFi</span>
-                                <span>Research</span>
-                                <span>Finance</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="role-header">
-                                <h3>Barclays</h3>
-                                <span class="role">Quantitative Analyst Intern</span>
-                                <span class="date">Jun 2024 - Aug 2024</span>
-                            </div>
-                            <p>Developed and validated credit risk models using 4M+ data points with linear regression, tree-based ML algorithms, & statistical inference.</p>
-                            <div class="skill-tags">
-                                <span>Risk</span>
-                                <span>ML</span>
-                                <span>Finance</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="role-header">
-                                <h3>The Travelers Companies</h3>
-                                <span class="role">Software Engineer Intern</span>
-                                <span class="date">Jun 2023 - Aug 2023</span>
-                            </div>
-                            <p>Security authentication & database engineering.</p>
-                            <div class="skill-tags">
-                                <span>Java</span>
-                                <span>Okta</span>
-                                <span>SQL</span>
-                            </div>
-                        </div>
-                    </div>
-                    
+        <!-- Content Wrapper with Sidebar and Projects -->
+        <div class="content-wrapper">
+            <!-- Left Panel (Now in the middle as a sticky sidebar) -->
+            <aside class="info-panel">
+                <div class="bio-section">
+                    <p>Hi! I'm Charles, and I'm a third year at Columbia University double majoring in Computer Science and Mathematics-Statistics.</p>
+                    <p>My interests lie in quantum-accelerated AI systems, and I'm most recently working on multimodal LLM reasoning.</p>
+                    <p>Most recent favorite shell command: git ls-files | xargs wc -l</p>
+                    <p>Email: charleslw2017@gmail.com</p>
                 </div>
-            </div>
 
-            <div class="education-section">
-                <h2>Education</h2>
-                <div class="education-card">
-                    <h3>Columbia University</h3>
-                    <div class="edu-details">
-                        <span class="degree">Double BA, CS & Math-Stats</span>
-                        <span class="year">2022 - 2026</span>
-                    </div>
-                    <div class="course-tags">
-                        <span>AI</span>
-                        <span>ML</span>
-                        <span>NLP</span>
-                        <span>DSA</span>
-                        <span>Stochastic Processes</span>
-                        <span>Linear Regression Models</span>
-                        <span>Statistical Inference</span>
-                    </div>
-                </div>
-            </div>
-        </aside>
+                <div class="experience-section">
+                    <h2>Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="role-header">
+                                    <h3>Columbia Engineering</h3>
+                                    <span class="role">Undergraduate Researcher</span>
+                                    <span class="date">Dec 2024 - Present</span>
+                                </div>
+                                <p>Novel latent reasoning benchmarks and test-time scaling techniques for LLMs.</p>
+                                <div class="skill-tags">
+                                    <span>ML</span>
+                                    <span>LLMs</span>
+                                    <span>Research</span>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <div class="projects-grid">
-                <!-- Lumara -->
-                <a href="https://lumaraai.xyz" class="project-card" target="_blank">
-                    <img src="lumara_logo.png" alt="Lumara" class="project-image">
-                    <div class="project-info">
-                        <h3>Lumara</h3>
-                        <p>Coming soon!</p>
-                    </div>
-                </a>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="role-header">
+                                    <h3>Barclays</h3>
+                                    <span class="role">Quantitative Analyst Intern</span>
+                                    <span class="date">Jun 2024 - Aug 2024</span>
+                                </div>
+                                <p>Developed and validated credit risk models using 4M+ data points with linear regression, tree-based ML algorithms, & statistical inference.</p>
+                                <div class="skill-tags">
+                                    <span>Risk</span>
+                                    <span>ML</span>
+                                    <span>Finance</span>
+                                </div>
+                            </div>
+                        </div>
 
-                <!-- ML Research -->
-                <div class="project-card">
-                    <img src="latent_reasoning.png" alt="ML Research" class="project-image">
-                    <div class="project-info">
-                        <h3>Latent Reasoning</h3>
-                        <p>Developing novel benchmarks and test-time scaling techniques for enhanced LLM reasoning.</p>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="role-header">
+                                    <h3>Steel Key Capital</h3>
+                                    <span class="role">Research Analyst</span>
+                                    <span class="date">Feb 2024 - Apr 2024</span>
+                                </div>
+                                <p>Digital assets research at $10M+ AUM liquid token hedge fund focused on crypto & DeFi protocols.</p>
+                                <div class="skill-tags">
+                                    <span>DeFi</span>
+                                    <span>Research</span>
+                                    <span>Finance</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="role-header">
+                                    <h3>The Travelers Companies</h3>
+                                    <span class="role">Software Engineer Intern</span>
+                                    <span class="date">Jun 2023 - Aug 2023</span>
+                                </div>
+                                <p>Security authentication & database engineering.</p>
+                                <div class="skill-tags">
+                                    <span>Java</span>
+                                    <span>Okta</span>
+                                    <span>SQL</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Noesis -->
-                <a href="https://noesis.live" class="project-card" target="_blank">
-                    <img src="noesis.png" alt="Noesis" class="project-image">
-                    <div class="project-info">
-                        <h3>Noesis Research</h3>
-                        <p>Coming soon!</p>
-                    </div>
-                </a>
-
-                <!-- Movement Analysis -->
-                <a href="https://drive.google.com/file/d/1Sl_7MxEcjd3lfS9SOKmM63nbk2Uf7l_B/view" class="project-card" target="_blank">
-                    <img src="mcm_stairs.png" alt="Movement Analysis" class="project-image">
-                    <div class="project-info">
-                        <h3>History in Stairways</h3>
-                        <p>Framework combining stochastic wear equations and differential systems for archaeological research.</p>
-                    </div>
-                </a>
-
-                <!-- Trading Strategy -->
-                <a href="https://drive.google.com/file/d/1rLTCBG_FDrZ5eBxYK5Dgg_EryyNt-03t/view" class="project-card" target="_blank">
-                    <img src="stock_buyback.png" alt="Trading Strategy" class="project-image">
-                    <div class="project-info">
-                        <h3>Stock Buyback Optimization</h3>
-                        <p>Optimized trading execution using genetic algorithms and geometric Brownian motion simulations.</p>
-                    </div>
-                </a>
-
-                <!-- Asteroid Projections -->
-                <a href="https://github.com/charleslwang/AsteroidTrajectories" class="project-card" target="_blank">
-                    <img src="asteroid.png" alt="Asteroid Projections" class="project-image">
-                    <div class="project-info">
-                        <h3>Asteroid Forecast</h3>
-                        <p>Advanced trajectory forecasting system for predicting and analyzing potential asteroid paths.</p>
-                        <div class="project-tags">
-                            <span>Space</span>
+                <div class="education-section">
+                    <h2>Education</h2>
+                    <div class="education-card">
+                        <h3>Columbia University</h3>
+                        <div class="edu-details">
+                            <span class="degree">Double BA, CS & Math-Stats</span>
+                            <span class="year">2022 - 2026</span>
+                        </div>
+                        <div class="course-tags">
+                            <span>AI</span>
                             <span>ML</span>
+                            <span>NLP</span>
+                            <span>DSA</span>
+                            <span>Stochastic Processes</span>
+                            <span>Linear Regression</span>
+                            <span>Statistical Inference</span>
                         </div>
                     </div>
-                </a>
+                </div>
+            </aside>
 
-                <!-- Market Dashboard -->
-                <a href="https://github.com/charleslwang/RTMD" class="project-card" target="_blank">
-                    <img src="markets.png" alt="Market Dashboard" class="project-image">
-                    <div class="project-info">
-                        <h3>Market Dashboard</h3>
-                        <p>Real-time financial market analytics platform with ML-powered predictive insights.</p>
-                        <div class="project-tags">
-                            <span>Finance</span>
-                            <span>Data</span>
+            <!-- Main Content (Projects) -->
+            <main class="projects-section">
+                <div class="projects-grid">
+                    <!-- Lumara -->
+                    <a href="https://lumaraai.xyz" class="project-card" target="_blank">
+                        <img src="lumara_logo.png" alt="Lumara" class="project-image">
+                        <div class="project-info">
+                            <h3>Lumara</h3>
+                            <p>Coming soon!</p>
+                        </div>
+                    </a>
+
+                    <!-- ML Research -->
+                    <div class="project-card">
+                        <img src="latent_reasoning.png" alt="ML Research" class="project-image">
+                        <div class="project-info">
+                            <h3>Latent Reasoning</h3>
+                            <p>Developing novel benchmarks and test-time scaling techniques for enhanced LLM reasoning.</p>
                         </div>
                     </div>
-                </a>
-            </div>
-        </main>
+
+                    <!-- Noesis -->
+                    <a href="https://noesis.live" class="project-card" target="_blank">
+                        <img src="noesis.png" alt="Noesis" class="project-image">
+                        <div class="project-info">
+                            <h3>Noesis Research</h3>
+                            <p>Coming soon!</p>
+                        </div>
+                    </a>
+
+                    <!-- Movement Analysis -->
+                    <a href="https://drive.google.com/file/d/1Sl_7MxEcjd3lfS9SOKmM63nbk2Uf7l_B/view" class="project-card" target="_blank">
+                        <img src="mcm_stairs.png" alt="Movement Analysis" class="project-image">
+                        <div class="project-info">
+                            <h3>History in Stairways</h3>
+                            <p>Framework combining stochastic wear equations and differential systems for archaeological research.</p>
+                        </div>
+                    </a>
+
+                    <!-- Trading Strategy -->
+                    <a href="https://drive.google.com/file/d/1rLTCBG_FDrZ5eBxYK5Dgg_EryyNt-03t/view" class="project-card" target="_blank">
+                        <img src="stock_buyback.png" alt="Trading Strategy" class="project-image">
+                        <div class="project-info">
+                            <h3>Stock Buyback Optimization</h3>
+                            <p>Optimized trading execution using genetic algorithms and geometric Brownian motion simulations.</p>
+                        </div>
+                    </a>
+
+                    <!-- Asteroid Projections -->
+                    <a href="https://github.com/charleslwang/AsteroidTrajectories" class="project-card" target="_blank">
+                        <img src="asteroid.png" alt="Asteroid Projections" class="project-image">
+                        <div class="project-info">
+                            <h3>Asteroid Forecast</h3>
+                            <p>Advanced trajectory forecasting system for predicting and analyzing potential asteroid paths.</p>
+                            <div class="project-tags">
+                                <span>Space</span>
+                                <span>ML</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Market Dashboard -->
+                    <a href="https://github.com/charleslwang/RTMD" class="project-card" target="_blank">
+                        <img src="markets.png" alt="Market Dashboard" class="project-image">
+                        <div class="project-info">
+                            <h3>Market Dashboard</h3>
+                            <p>Real-time financial market analytics platform with ML-powered predictive insights.</p>
+                            <div class="project-tags">
+                                <span>Finance</span>
+                                <span>Data</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </main>
+        </div>
 
         <!-- Company Strip -->
         <footer class="company-strip">
             <div class="logo-scroll">
+                <img src="barclays.jpg" alt="Barclays" class="company-logo">
+                <img src="cbs.jpg" alt="Columbia Business School" class="company-logo">
+                <img src="columbia_engineering.png" alt="Columbia Engineering" class="company-logo">
+                <img src="skc.jpeg" alt="Steel Key Capital" class="company-logo">
+                <img src="ask2ai.png" alt="ask2.ai" class="company-logo">
+                <img src="travelers.png" alt="Travelers" class="company-logo">
+                <!-- Duplicated for continuous scrolling effect -->
                 <img src="barclays.jpg" alt="Barclays" class="company-logo">
                 <img src="cbs.jpg" alt="Columbia Business School" class="company-logo">
                 <img src="columbia_engineering.png" alt="Columbia Engineering" class="company-logo">
